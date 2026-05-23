@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FAQ - RECTOR</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#0b0f14;
+      color:white;
+      font-family:'Poppins';
+    }
+
+    /* NAVBAR */
+
+    .navbar{
+
+      width:100%;
+
+      padding:25px 60px;
+
+      background:#111820;
+
+      display:flex;
+
+      justify-content:space-between;
+
+      align-items:center;
+    }
+
+    .logo{
+
+      font-size:22px;
+
+      font-weight:700;
+
+      letter-spacing:2px;
+    }
+
+    .voltar{
+
+      color:white;
+
+      text-decoration:none;
+
+      border:1px solid rgba(255,255,255,0.1);
+
+      padding:10px 18px;
+
+      border-radius:8px;
+
+      transition:0.3s;
+    }
+
+    .voltar:hover{
+
+      background:#d4af37;
+
+      color:black;
+    }
+
+    /* CONTAINER */
+
+    .faq-container{
+
+      max-width:900px;
+
+      margin:auto;
+
+      padding:80px 20px;
+    }
+
+    .faq-title{
+
+      font-size:48px;
+
+      margin-bottom:20px;
+
+      text-align:center;
+    }
+
+    .faq-sub{
+
+      text-align:center;
+
+      color:#bdbdbd;
+
+      margin-bottom:60px;
+
+      font-size:16px;
+    }
+
+    /* FAQ */
+
+    .faq-item{
+
+      background:#111820;
+
+      border:1px solid rgba(255,255,255,0.05);
+
+      border-radius:14px;
+
+      margin-bottom:18px;
+
+      overflow:hidden;
+    }
+
+    details{
+
+  padding:22px;
+
+  position: relative;
+
+  padding-right:60px;
+}
+
+summary{
+
+  cursor:pointer;
+
+  list-style:none;
+
+  font-size:17px;
+
+  font-weight:600;
+
+  position: relative;
+}
+
+/* REMOVE SETA PADRÃO */
+
+summary::-webkit-details-marker{
+
+  display:none;
+}
+
+/* MAIS */
+
+summary::after{
+
+  content:"+";
+
+  position:absolute;
+
+  right:-30px;
+
+  top:50%;
+
+  transform:translateY(-50%);
+
+  font-size:32px;
+
+  color:white;
+
+  font-weight:300;
+
+  transition:0.3s;
+}
+
+/* MENOS */
+
+details[open] summary::after{
+
+  content:"−";
+}
+
+    details p{
+
+      margin-top:18px;
+
+      color:#cfcfcf;
+
+      line-height:1.8;
+
+      font-size:15px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      .navbar{
+
+        padding:20px;
+      }
+
+      .faq-title{
+
+        font-size:22px;
+      }
+
+      .faq-sub{
+
+        font-size:12px;
+        margin-top: -13px;
+      }
+      .logo {
+       font-size: 16px;
+
+      }
+
+      summary{
+
+        font-size:13px;
+      }
+
+      details p{
+
+        font-size:12px;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- TOPO -->
+  <div class="navbar">
+
+    <div class="logo">
+      RECTOR
+    </div>
+
+    <a href="404copia.html" class="voltar">
+      Voltar
+    </a>
+
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq-container">
+
+    <h1 class="faq-title">
+      PERGUNTAS FREQUENTES
+    </h1>
+
+    <p class="faq-sub">
+      Tire suas dúvidas sobre nossos serviços audiovisuais.
+    </p>
+
+    <!-- ITEM -->
+    <div class="faq-item">
+
+      <details>
+
+        <summary>
+           Como eu faço para contratar vocês?
+        </summary>
+
+        <p>
+         Entre em contato pelo WhatsApp (+55) 11 94883-8756 e fale conosco agora mesmo.
+        </p>
+
+      </details>
+
+    </div>
+
+    <!-- ITEM -->
+    <div class="faq-item">
+
+      <details>
+
+        <summary>
+          Como funciona o orçamento?
+        </summary>
+
+        <p>
+          Após o contato, entendemos sua necessidade e montamos
+          uma proposta personalizada para o seu projeto.
+        </p>
+
+      </details>
+
+    </div>
+
+    <!-- ITEM -->
+    <div class="faq-item">
+
+      <details>
+
+        <summary>
+          Caso o projeto exija, vocês têm equipe?
+        </summary>
+
+        <p>
+          Sim, contamos com muitos profissionais parceiros para cada etapa das produções caso precise. 
+        </p>
+
+      </details>
+
+    </div>
+
+    <!-- ITEM -->
+    <div class="faq-item">
+
+      <details>
+
+        <summary>
+          Quero trabalhar com vocês, como faço?
+        </summary>
+
+        <p>
+         Envie seu currículo e portfólio de trabalho para o e-mail: contato.stefany.batista.lima @gmail.com
+        </p>
+
+      </details>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
